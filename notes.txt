@@ -1,0 +1,5 @@
+Si en vez de poner los links de bootstrap dentro del codigo, queremos descargar los ficheros para tener todos el proyecto en nuestro servidor, 
+podemos descargarlos desde la web de bootstrap y guardarlos en las carpetas de css y js.
+
+Para ello, desde el apartado dowloads de bootstrap vamos a la opción: Compiled CSS and JS y añadimos carpetas descargadas a las carpetas css y js que ya teniamos creadas
+
