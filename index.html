@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="es-es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second project with bootstrap</title>
     <!--Link a bootstrap-->
     <link rel="stylesheet" href="./css/BootStrapCss/bootstrap.min.css">
-
+    <!--Link a nuestra propia hoja de estilos-->
+    <link rel="stylesheet" href="css/OwnCss/estilos.css">
 </head>
+
 <body>
-    <h1>Todo Tecnologia</h1>
-    
+    <div class="container-fluid mastermind">
+        <h1>Todo Tecnologia</h1>
+    </div>
+
+
+    <main> <!--Le estamos añadiendo los estilos de bootstrap +  los estilos que hemos añadido en nuestro css-->
+        <!--NOTICIAS PRINCIPALES-->
+        <article class="container">
+            <div class="row">
+                <div class="col mastermind">
+                    <h2>Que es Threads, la nueva alternativa de Instagram a Twitter</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iure atque repellat accusantium
+                        omnis earum vitae quia animi itaque perferendis qui a numquam quod nisi, voluptatum eveniet
+                        perspiciatis culpa aliquam.</p>
+                </div>
+                <div class="col mastermindgrey60">
+                <h2>Oppenheimer - Una peliucla de Christopher Nolan</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ducimus placeat suscipit debitis quam
+                    et provident est pariatur. Vero quaerat non illum dignissimos sint corrupti aliquid laboriosam
+                    aperiam repellendus commodi.</p>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="container-md mastermindgrey60">
+
+        </article>
+
+        <article class="container-lg mastermindgrey80">
+            <h2>Meta lanz una IA que crea imagenes usando el sentido comun</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit sed accusantium maxime laborum, possimus
+                similique eius obcaecati reprehenderit blanditiis quidem ipsum labore exercitationem at eos molestias
+                provident recusandae totam libero.</p>
+        </article>
+        <article class="container-xl mastermindgrey60">
+            <h2>ChatGPT lanza Code Interpreter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, error sit, ad reiciendis in ratione
+                pariatur culpa cumque similique hic esse alias adipisci amet quam quis, quod corporis nam earum.</p>
+        </article>
+    </main>
     <!--Scrip para cargar bootstrap-->
     <script src="./js/BootStrapJs/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

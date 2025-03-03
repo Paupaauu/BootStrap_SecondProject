@@ -3,3 +3,11 @@ podemos descargarlos desde la web de bootstrap y guardarlos en las carpetas de c
 
 Para ello, desde el apartado dowloads de bootstrap vamos a la opción: Compiled CSS and JS y añadimos carpetas descargadas a las carpetas css y js que ya teniamos creadas
 
+class="container" -> ocupa parte de la pantalla, dejando una especie de padding
+class="container-fluid" -> ocupa el 100% del ancho de la pantalla
+
+container-lg -> Creo que es el mejor si lo que queremos es diseñar para una aplicación que se utilice mayoritariamente en pc
+
+
+GRID:
+!!Un sistema de grid no va a funcionar a no ser que lo envolvamos con un container
