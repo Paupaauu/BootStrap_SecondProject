@@ -11,3 +11,92 @@ container-lg -> Creo que es el mejor si lo que queremos es diseñar para una apl
 
 GRID:
 !!Un sistema de grid no va a funcionar a no ser que lo envolvamos con un container
+
+Si queremos devidir las columnas de forma igual en lo ancho de la pantalla utilizamos los divisores normales:
+        <article class="container">
+            <div class="row">
+                <div class="col">
+                    col1
+                </div>
+                <div class="col">
+                    col 2
+                </div>
+            </div>
+        </article>
+
+Si queremos devidir las columnas de forma desigual en lo ancho de la pantalla, utilizamos una estructura similiar a la anterior, pero teniendo en cuenta que la pantalla se divide en 12 partes iguales, le damos una anchura a cada columna.
+Por ejemplo en el siguiente ejemplo, tendriamos 3 columnas, la primera ocuparia la mitad de la pantalla 6/12 y las otras dos ocuparian de forma igual la otra mitad restante:
+    <article class="container-lg mastermindgrey60">
+            <div class="row">
+                <div class="col-6">
+                   col1
+                </div>
+                <div class="col">
+                   col2
+                </div>
+                <div class="col">
+                    col3
+                </div>
+            </div>
+    </article>
+
+Esto seria lo mismo que escribir asi:
+    <article class="container-lg mastermindgrey60">
+            <div class="row">
+                <div class="col-6">
+                   col1
+                </div>
+                <div class="col-3">
+                   col2
+                </div>
+                <div class="col-3">
+                    col3
+                </div>
+            </div>
+    </article>
+
+    Si queremos que las columnas se distribuyan igual por el ancho de la pantalla pero cuando llegue a un numero determinado de columnas salte a la otra fila, utilizaremos el siguiente codigo:
+     Eeste codigo hará que se muestren tres columnas en cada linea, si añadimos mas de tres columnas, saltará a la siguiente fila           
+            <article class="container">
+                <div class="row row-cols-3">
+                    <div class="col">Column</div>
+                    <div class="col">Column</div>
+                    <div class="col">Column</div>
+                    <div class="col">Column</div>
+                </div>
+            </article>
+
+
+
+Para hacer la pagina responsive para moviles, ponemos utilizar los breakpoints en las columnas, ejemplo:
+Al poner sm en las columnas, haremos que cuando se llegue al ancho delimitado por sm las columnas se apilaran una sobre otra
+Sm se puede poner en una o en todas las columnas 
+    <article class="container-lg mastermindgrey60">
+            <div class="row">
+                <div class="col-sm-6">
+                   col1
+                </div>
+                <div class="col-sm">
+                   col2
+                </div>
+                <div class="col-sm">
+                    col3
+                </div>
+            </div>
+    </article>
+
+    Tambien se pueden crear diferentes braeak points para diferentes anchos:
+
+        <article class="container-lg mastermindgrey60">
+            <div class="row">
+                <div class="col-sm-4 col-md-6">
+                   col1
+                </div>
+                <div class="col-sm-4 col-md-3">
+                   col2
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    col3
+                </div>
+            </div>
+    </article>
